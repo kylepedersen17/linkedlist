@@ -24,21 +24,49 @@ class LinkedList {
     public:
         LinkedList() : _head(nullptr) {}
         LinkedList(int headData) : _head(new Node(headData)) {}
-        ~LinkedList() {}
+        ~LinkedList() {
+            while (_head) {
+                Node* toDelete = _head;
+                _head = _head->getNext();
+                std::cout << "Deleting node from LL" << "\n";
+                delete toDelete;
+            }
+        }
         int getHeadData() {
             if (_head) return _head->getData(); 
             throw std::runtime_error("empty list!!!");
         }
-
+        void append(int val) { 
+            Node* nextNode = new Node(val);
+            if (!_head) {
+                _head = nextNode;
+            } else {
+                Node* current = _head;
+                while (current->getNext()) {
+                    current = current->getNext();
+                }
+                current->setNext(nextNode);
+            }
+        }
+        void display() {
+            Node* current = _head;
+            while (current) {
+                std::cout << current->getData() << " ";
+                current = current->getNext();
+            }
+            std::cout << "\n";
+        }
     private:
         Node* _head;
 };
 
 int main() {
     
-    LinkedList* ll = new LinkedList(4);
+    LinkedList ll;
+    ll.append(6);
+    ll.append(8);
+    ll.display();
 
-    std::cout << ll->getHeadData();
 
     return 0;
 }
