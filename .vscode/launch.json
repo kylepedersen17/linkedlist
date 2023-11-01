@@ -6,7 +6,7 @@
             "name": "C/C++: clang++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/helloworld",
+            "program": "${fileDirname}/main",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
