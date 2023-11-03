@@ -1,5 +1,4 @@
 #include <iostream>
-#include <memory>
 
 
 class LinkedList {
@@ -81,12 +80,32 @@ class LinkedList {
             _head = nextNode;
         }
 
+        Node* find(int val) {
+            Node* current = _head;
+            while (current) {
+                int data = current->getData();
+                if (data == val) return current;
+                current = current->getNext();
+            }
+            return nullptr;
+        }
 
-        //to add: find(), remove(), 
+        // void remove(int val) {
+        //     Node* prev = nullptr;
+        //     Node* current = _head;
+        //     while (current) {
+        //         if (current->getData() == val) {
+        //             prev->setNext(current->getNext());
+        //             delete current;
+        //             return;
+        //         }
+        //         prev = current;
+        //         current = current->getNext();
+        //     }
+        // }
+
     private:
-        Node* _head;
-
-        
+        Node* _head;      
 };
 
 int main() {
