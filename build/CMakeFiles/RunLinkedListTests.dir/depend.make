@@ -23,5 +23,6 @@ CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o: ../googletest/goo
 CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o: ../LinkedList.h
+CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o: ../LinkedList.inl
 CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o: ../tests/test_linkedlist.cpp
 

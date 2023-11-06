@@ -273,7 +273,7 @@ GTEST_HAS_ABSL:BOOL=OFF
 
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
-INSTALL_GTEST:BOOL=ON
+INSTALL_GTEST:BOOL=OFF
 
 //Value Computed by CMake
 LinkedListProject_BINARY_DIR:STATIC=/Users/kylepedersen/Desktop/LinkedList/build

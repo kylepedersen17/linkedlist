@@ -65,52 +65,13 @@ CMAKE_SOURCE_DIR = /Users/kylepedersen/Desktop/LinkedList
 CMAKE_BINARY_DIR = /Users/kylepedersen/Desktop/LinkedList/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/RunLinkedListTests.dir
-
-# All Build rule for target.
-CMakeFiles/RunLinkedListTests.dir/all: CMakeFiles/LinkedList.dir/all
-CMakeFiles/RunLinkedListTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
-CMakeFiles/RunLinkedListTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) -f CMakeFiles/RunLinkedListTests.dir/build.make CMakeFiles/RunLinkedListTests.dir/depend
-	$(MAKE) -f CMakeFiles/RunLinkedListTests.dir/build.make CMakeFiles/RunLinkedListTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles --progress-num=3,4 "Built target RunLinkedListTests"
-.PHONY : CMakeFiles/RunLinkedListTests.dir/all
-
-# Include target in all.
-all: CMakeFiles/RunLinkedListTests.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/RunLinkedListTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RunLinkedListTests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles 0
-.PHONY : CMakeFiles/RunLinkedListTests.dir/rule
-
-# Convenience name for target.
-RunLinkedListTests: CMakeFiles/RunLinkedListTests.dir/rule
-
-.PHONY : RunLinkedListTests
-
-# clean rule for target.
-CMakeFiles/RunLinkedListTests.dir/clean:
-	$(MAKE) -f CMakeFiles/RunLinkedListTests.dir/build.make CMakeFiles/RunLinkedListTests.dir/clean
-.PHONY : CMakeFiles/RunLinkedListTests.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/RunLinkedListTests.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all: CMakeFiles/LinkedList.dir/all
+CMakeFiles/main.dir/all:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles --progress-num=9,10 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles --progress-num=7,8 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Include target in all.
@@ -120,7 +81,7 @@ all: CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
@@ -141,39 +102,40 @@ clean: CMakeFiles/main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LinkedList.dir
+# Target rules for target CMakeFiles/RunLinkedListTests.dir
 
 # All Build rule for target.
-CMakeFiles/LinkedList.dir/all:
-	$(MAKE) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/depend
-	$(MAKE) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles --progress-num=1,2 "Built target LinkedList"
-.PHONY : CMakeFiles/LinkedList.dir/all
+CMakeFiles/RunLinkedListTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/RunLinkedListTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles/RunLinkedListTests.dir/build.make CMakeFiles/RunLinkedListTests.dir/depend
+	$(MAKE) -f CMakeFiles/RunLinkedListTests.dir/build.make CMakeFiles/RunLinkedListTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles --progress-num=1,2 "Built target RunLinkedListTests"
+.PHONY : CMakeFiles/RunLinkedListTests.dir/all
 
 # Include target in all.
-all: CMakeFiles/LinkedList.dir/all
+all: CMakeFiles/RunLinkedListTests.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LinkedList.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LinkedList.dir/all
+CMakeFiles/RunLinkedListTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RunLinkedListTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles 0
-.PHONY : CMakeFiles/LinkedList.dir/rule
+.PHONY : CMakeFiles/RunLinkedListTests.dir/rule
 
 # Convenience name for target.
-LinkedList: CMakeFiles/LinkedList.dir/rule
+RunLinkedListTests: CMakeFiles/RunLinkedListTests.dir/rule
 
-.PHONY : LinkedList
-
-# clean rule for target.
-CMakeFiles/LinkedList.dir/clean:
-	$(MAKE) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/clean
-.PHONY : CMakeFiles/LinkedList.dir/clean
+.PHONY : RunLinkedListTests
 
 # clean rule for target.
-clean: CMakeFiles/LinkedList.dir/clean
+CMakeFiles/RunLinkedListTests.dir/clean:
+	$(MAKE) -f CMakeFiles/RunLinkedListTests.dir/build.make CMakeFiles/RunLinkedListTests.dir/clean
+.PHONY : CMakeFiles/RunLinkedListTests.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/RunLinkedListTests.dir/clean
 
 .PHONY : clean
 
@@ -222,7 +184,7 @@ googletest/googletest/preinstall:
 googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles --progress-num=5,6 "Built target gtest_main"
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.
@@ -259,7 +221,7 @@ clean: googletest/googletest/CMakeFiles/gtest_main.dir/clean
 googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles --progress-num=5,6 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles --progress-num=3,4 "Built target gtest"
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Include target in all.

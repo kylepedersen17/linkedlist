@@ -24,4 +24,5 @@ CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o
  ../googletest/googletest/include/gtest/internal/gtest-string.h
  ../googletest/googletest/include/gtest/internal/gtest-type-util.h
  /Users/kylepedersen/Desktop/LinkedList/LinkedList.h
+ /Users/kylepedersen/Desktop/LinkedList/LinkedList.inl
  /Users/kylepedersen/Desktop/LinkedList/tests/test_linkedlist.cpp
