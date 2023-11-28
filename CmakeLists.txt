@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.10)
+project(LinkedList)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Debug CACHE STRING "Choose the type of build." FORCE)
+endif()
+
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
+
+set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)  
+add_subdirectory(googletest)  
+
+add_executable(RunLinkedListTests tests/test_linkedlist.cpp)
+add_executable(main main.cpp)
+
+target_link_libraries(RunLinkedListTests gtest gtest_main)

@@ -1,38 +1,53 @@
 #pragma once
-
 #include <iostream>
 
+template <typename T>
 class LinkedList {
-
-    private:
+    public:
         class Node {
             public:
-                Node(int data);
+                Node(T data);
                 ~Node();
+                Node(const Node& other);
 
-                int getData();
-                void setData(int data);
+                T& getData();
+                const T& getData() const;
+                void setData(T data);
                 Node* getNext();
                 void setNext(Node* next);
 
             private:
-                int _data;
+                T _data;
                 Node* _next;
-                
         };
 
     public:
         LinkedList();
-        LinkedList(int headData);
+        LinkedList(T headData);
+        LinkedList(const LinkedList& other); // copy constructor
+        LinkedList(LinkedList<T>&& other) noexcept; //move constructor
         ~LinkedList();
-        int getHeadData() const;
-        void append(int val);
+        
+        // class methods
+        T getHeadData() const;
+        void append(T val);
         void display() const;
-        int length() const;
+        size_t length() const;
         bool isEmpty() const;
-        void prepend(int val);
-        Node* find(int val); 
+        void prepend(T val);
+        bool contains(T val); 
+        void remove(T val);
+        void clear();
+
+        //operator overloads
+        T& operator[](int index);
+        bool operator==(const LinkedList<T>& other) const;
+        bool operator!=(const LinkedList<T>& other) const;
+        LinkedList<T>& operator=(const LinkedList<T>& other);
+        LinkedList<T>& operator=(LinkedList<T>&& other) noexcept;
 
     private:
         Node* _head;      
 };
+
+ #include "LinkedList.inl"
