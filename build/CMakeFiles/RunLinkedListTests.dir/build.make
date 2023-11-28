@@ -60,15 +60,15 @@ include CMakeFiles/RunLinkedListTests.dir/flags.make
 CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o: CMakeFiles/RunLinkedListTests.dir/flags.make
 CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o: ../tests/test_linkedlist.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylepedersen/Desktop/LinkedList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o -c /Users/kylepedersen/Desktop/LinkedList/tests/test_linkedlist.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.o -c /Users/kylepedersen/Desktop/LinkedList/tests/test_linkedlist.cpp
 
 CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylepedersen/Desktop/LinkedList/tests/test_linkedlist.cpp > CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylepedersen/Desktop/LinkedList/tests/test_linkedlist.cpp > CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.i
 
 CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylepedersen/Desktop/LinkedList/tests/test_linkedlist.cpp -o CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylepedersen/Desktop/LinkedList/tests/test_linkedlist.cpp -o CMakeFiles/RunLinkedListTests.dir/tests/test_linkedlist.cpp.s
 
 # Object files for target RunLinkedListTests
 RunLinkedListTests_OBJECTS = \
