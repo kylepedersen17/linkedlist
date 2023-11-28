@@ -491,7 +491,6 @@ TEST(LinkedListTest, testPrependFloat) {
     EXPECT_NEAR(ll2.getHeadData(), 11.0f, TOLERANCE);
 }
 
-//FUTURE UPDATE, THE CONTAINS METHOD FOR FLOAT SHOULD HANDLE THE TOLERANCE
 TEST(LinkedListTest, testContainsFloat) {
     LinkedList<float> ll;
     ll.append(5.0f);
@@ -529,7 +528,6 @@ TEST(LinkedListTest, testIndexingFloat) {
     EXPECT_THROW(ll[0], std::out_of_range);
 }
 
-//FUTURE UPDATE, THE == OPERATOR FOR FLOAT SHOULD HANDLE THE TOLERANCE
 TEST(LinkedListTest, testIsEqualFloat) {
     LinkedList<float> ll;
     LinkedList<float> ll2;
@@ -562,7 +560,6 @@ TEST(LinkedListTest, testIsEqualFloat) {
     EXPECT_EQ(ll != ll2, false);
 }
 
-//FUTURE UPDATE, THE COPY CONSTRUCTOR FOR FLOAT SHOULD HANDLE THE TOLERANCE
 TEST(LinkedListTest, testCopyConstructorFloat) {
     LinkedList<float> original;
     original.append(1.0f);
@@ -576,7 +573,6 @@ TEST(LinkedListTest, testCopyConstructorFloat) {
     EXPECT_NE(copy, original);
 }
 
-//FUTURE UPDATE, THE COPY OPERATOR FOR FLOAT SHOULD HANDLE THE TOLERANCE
 TEST(LinkedListTest, testCopyAssignmentOperatorFloat) {
     LinkedList<float> original;
     original.append(1.0f);
@@ -590,7 +586,6 @@ TEST(LinkedListTest, testCopyAssignmentOperatorFloat) {
     EXPECT_NE(copy, original);
 }
 
-//FUTURE UPDATE, THE MOVE CONSTRUCTOR FOR FLOAT SHOULD HANDLE THE TOLERANCE
 TEST(LinkedListTest, testMoveConstructorFloat) {
     LinkedList<float> original;
     original.append(1.0f);
@@ -605,7 +600,6 @@ TEST(LinkedListTest, testMoveConstructorFloat) {
     EXPECT_TRUE(original.isEmpty());
 }
 
-//FUTURE UPDATE, THE MOVE OPERATOR FOR FLOAT SHOULD HANDLE THE TOLERANCE
 TEST(LinkedListTest, testMoveAssignmentOperatorFloat) {
     LinkedList<float> original;
     original.append(1.0f);
